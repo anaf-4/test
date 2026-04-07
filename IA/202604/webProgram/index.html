@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitUploader - GitHub 파일 업로드 도구</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-github"></i>
+                <span>GitUploader</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">기능</a></li>
+                <li><a href="#how-it-works">사용 방법</a></li>
+                <li><a href="#upload">업로드</a></li>
+                <li><a href="#tech-stack">기술 스택</a></li>
+            </ul>
+            <button class="btn-login" id="loginBtn">
+                <i class="fab fa-github"></i>
+                GitHub 로그인
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>GitHub에 파일을 <span class="gradient-text">간편하게</span> 업로드하세요</h1>
+                <p>드래그 앤 드롭으로 파일과 폴더를 GitHub 저장소에 빠르고 쉽게 업로드할 수 있는 웹 기반 도구입니다.</p>
+                <div class="hero-buttons">
+                    <a href="#upload" class="btn-primary">지금 시작하기</a>
+                    <a href="#features" class="btn-secondary">자세히 알아보기</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-file-upload"></i>
+                    <span>파일 업로드</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-folder-open"></i>
+                    <span>폴더 업로드</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-code-branch"></i>
+                    <span>브랜치 선택</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>주요 기능</h2>
+                <p>강력한 기능으로 GitHub 작업을 더 쉽게</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>파일 업로드</h3>
+                    <p>단일 파일 또는 여러 파일을 선택하여 GitHub 저장소에 간편하게 업로드하세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-folder-plus"></i>
+                    </div>
+                    <h3>폴더 업로드</h3>
+                    <p>전체 폴더 구조를 유지한 채로 한 번에 업로드할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>저장소 선택</h3>
+                    <p>업로드할 GitHub 저장소와 브랜치를 자유롭게 선택하세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>커밋 메시지</h3>
+                    <p>각 업로드에 맞는 커스텀 커밋 메시지를 작성할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>드래그 앤 드롭</h3>
+                    <p>파일을 드래그하여 직관적으로 쉽게 업로드하세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>보안 인증</h3>
+                    <p>GitHub OAuth를 통해 안전하게 인증하고 작업하세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사용 방법 섹션 -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>사용 방법</h2>
+                <p>5단계로 간단하게 시작하세요</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>GitHub 로그인</h3>
+                        <p>GitHub 계정으로 안전하게 로그인하세요.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>저장소 및 브랜치 선택</h3>
+                        <p>업로드할 저장소와 브랜치를 선택하세요.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>파일/폴더 선택</h3>
+                        <p>업로드할 파일이나 폴더를 선택하거나 드래그 앤 드롭하세요.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>커밋 메시지 입력</h3>
+                        <p>업로드에 대한 커밋 메시지를 입력하세요.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>업로드 실행</h3>
+                        <p>업로드 버튼을 클릭하여 GitHub에 파일을 업로드하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 업로드 섹션 -->
+    <section id="upload" class="upload-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>파일 업로드</h2>
+                <p>GitHub 저장소에 파일을 업로드하세요</p>
+            </div>
+            <div class="upload-container">
+                <div class="upload-form">
+                    <div class="form-group">
+                        <label for="githubToken">GitHub Personal Access Token</label>
+                        <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="repoOwner">저장소 소유자</label>
+                            <input type="text" id="repoOwner" placeholder="사용자명 또는 조직명">
+                        </div>
+                        <div class="form-group">
+                            <label for="repoName">저장소 이름</label>
+                            <input type="text" id="repoName" placeholder="repository-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="branchName">브랜치 이름</label>
+                            <input type="text" id="branchName" placeholder="main">
+                        </div>
+                        <div class="form-group">
+                            <label for="commitMessage">커밋 메시지</label>
+                            <input type="text" id="commitMessage" placeholder="커밋 메시지를 입력하세요">
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-zone-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>파일을 여기에 드래그하세요</h3>
+                        <p>또는</p>
+                        <div class="upload-buttons">
+                            <button class="btn-upload" id="fileUploadBtn">
+                                <i class="fas fa-file"></i>
+                                파일 선택
+                            </button>
+                            <button class="btn-upload" id="folderUploadBtn">
+                                <i class="fas fa-folder"></i>
+                                폴더 선택
+                            </button>
+                        </div>
+                        <input type="file" id="fileInput" multiple hidden>
+                        <input type="file" id="folderInput" webkitdirectory directory hidden>
+                    </div>
+                </div>
+                <div class="file-list" id="fileList">
+                    <h4>선택된 파일</h4>
+                    <ul id="fileListItems"></ul>
+                    <button class="btn-primary btn-upload-submit" id="uploadSubmitBtn" disabled>
+                        <i class="fas fa-upload"></i>
+                        업로드 시작
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술 스택 섹션 -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>기술 스택</h2>
+                <p>사용된 기술을 확인하세요</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub OAuth</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-server"></i>
+                    <h3>GitHub REST API</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-github"></i>
+                    <span>GitUploader</span>
+                </div>
+                <p>GitHub 파일 업로드를 간편하게 하는 웹 기반 도구</p>
+                <div class="footer-links">
+                    <a href="#features">기능</a>
+                    <a href="#how-it-works">사용 방법</a>
+                    <a href="#upload">업로드</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 GitUploader. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
